@@ -1,0 +1,19 @@
+current directory: /home/elhadjsekou/the-big-project/vendor/bundle/ruby/3.2.0/gems/debug-1.11.1/ext/debug
+/usr/bin/ruby3.2 -I/usr/lib/ruby/vendor_ruby extconf.rb
+creating Makefile
+
+current directory: /home/elhadjsekou/the-big-project/vendor/bundle/ruby/3.2.0/gems/debug-1.11.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20260408-2701-ah0wr2 sitelibdir\=./.gem.20260408-2701-ah0wr2 clean
+
+current directory: /home/elhadjsekou/the-big-project/vendor/bundle/ruby/3.2.0/gems/debug-1.11.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20260408-2701-ah0wr2 sitelibdir\=./.gem.20260408-2701-ah0wr2
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/elhadjsekou/the-big-project/vendor/bundle/ruby/3.2.0/gems/debug-1.11.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20260408-2701-ah0wr2 sitelibdir\=./.gem.20260408-2701-ah0wr2 install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20260408-2701-ah0wr2/debug
+
+current directory: /home/elhadjsekou/the-big-project/vendor/bundle/ruby/3.2.0/gems/debug-1.11.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20260408-2701-ah0wr2 sitelibdir\=./.gem.20260408-2701-ah0wr2 clean
