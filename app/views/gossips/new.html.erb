@@ -1,0 +1,29 @@
+<h1 class="mb-4">Crée ton potin</h1>
+
+<% if @gossip.errors.any? %>
+  <div class="alert alert-danger">
+    <ul>
+      <% @gossip.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%= form_tag gossips_path, method: :post do %>
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  
+  <div class="mb-3">
+    <label>Titre</label>
+    <input type="text" name="title" class="form-control" placeholder="Titre du potin (3-14 caractères)">
+  </div>
+
+  <div class="mb-3">
+    <label>Contenu</label>
+    <textarea name="content" class="form-control" rows="4" placeholder="Raconte ton potin..."></textarea>
+  </div>
+
+  <input type="submit" value="Publier le potin" class="btn btn-dark">
+<% end %>
+
+<%= link_to "Retour", root_path, class: "btn btn-outline-dark mt-3" %>
